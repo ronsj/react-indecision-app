@@ -25,7 +25,7 @@ var IndecisionApp = function (_React$Component) {
     }
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = IndecisionApp.__proto__ || Object.getPrototypeOf(IndecisionApp)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-      options: _this.props.options
+      options: []
     }, _this.handleDeleteOptions = function () {
       _this.setState(function () {
         return { options: [] };
@@ -104,11 +104,6 @@ var IndecisionApp = function (_React$Component) {
 
   return IndecisionApp;
 }(React.Component);
-
-IndecisionApp.defaultProps = {
-  options: []
-};
-
 
 var Header = function Header(props) {
   var title = props.title,

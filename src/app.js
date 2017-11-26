@@ -1,10 +1,6 @@
 class IndecisionApp extends React.Component {
-  static defaultProps = {
-    options: []
-  }
-
   state = {
-    options: this.props.options
+    options: []
   }
 
   componentDidMount() {
