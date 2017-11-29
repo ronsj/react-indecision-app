@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 import Header from './Header';
 import Action from './Action';
 import AddOption from './AddOption';
 import Options from './Options';
 
-export default class IndecisionApp extends React.Component {
+export default class IndecisionApp extends Component {
   state = {
     options: []
   }
@@ -59,7 +59,7 @@ export default class IndecisionApp extends React.Component {
     const subtitle = 'Put your life in the hands of a computer';
 
     return (
-      <div>
+      <Fragment>
         <Header subtitle={subtitle} />
         <Action
           hasOptions={this.state.options.length > 0}
@@ -71,7 +71,7 @@ export default class IndecisionApp extends React.Component {
           handleDeleteOption={this.handleDeleteOption}
         />
         <AddOption handleAddOption={this.handleAddOption} />
-      </div>
+      </Fragment>
     );
   }
 }
