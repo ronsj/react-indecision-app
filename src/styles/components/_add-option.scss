@@ -1,0 +1,28 @@
+.add-option-error {
+  color: $off-white;
+  font-style: italic;
+  margin: $m-size 0 0 0;
+  padding: 0 $m-size;
+}
+
+.add-option {
+  display: flex;
+  flex-flow: column;
+  padding: $m-size;
+}
+
+.add-option__input {
+  background: $off-white;
+  border: none;
+  border-bottom: .3rem solid darken($off-white, 10%);
+  color: $dark-blue;
+  flex: 1 0 auto;
+  font-weight: 500;
+  padding: $s-size;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .add-option {
+    flex-flow: row nowrap;
+  }
+}
